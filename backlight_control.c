@@ -54,5 +54,6 @@ int main(int argc, char **argv) {
 	brightness_value = MAX(brightness_value, MIN_BRIGHTNESS);
 	fprintf(brightness, "%d", brightness_value);
 	fclose(brightness);
+    fprintf(stdout, "%d\n", brightness_value * 100 / MAX_BRIGHTNESS);
 	return EXIT_SUCCESS;
 }
